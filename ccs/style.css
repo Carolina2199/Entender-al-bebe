@@ -38,29 +38,74 @@ body {
 }
 h1 {
   text-decoration: underline;
+  text-align: center;
   color: #333;
   text-shadow: -1px -1px 0 #000;
   text-transform: capitalize;
   padding: 1%;
 }
+h2,
+h3,
+h4 {
+  margin-left: 1rem;
+}
+.h2lactancia {
+  text-align: center;
+  margin: 0 auto;
+}
 .meses {
   width: 350px;
-}
-.posiciones {
-  width: 40%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 p {
   font-family: "Poppins", sans-serif;
+  white-space: pre-line;
   font-weight: 300;
   text-align: justify;
   padding: 2%;
 }
 .intro {
   font-style: italic;
+}
+.posiciones {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+  margin: 1rem auto;
+  padding: 0rem;
+}
+.posiciones p {
+  margin: 1rem;
+  line-height: 1.5;
+}
+
+.posicionesimg {
+  width: 80%;
+  height: auto;
+  border-radius: 7px;
+  object-fit: contain;
+  justify-self: center;
+}
+/* --- Responsive hasta 480px --- */
+@media (max-width: 480px) {
+  .posiciones {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .posicionesimg {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .posiciones p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
 }
 .consejos {
   display: grid;
@@ -143,9 +188,18 @@ p {
 .listap {
   grid-area: listap;
 }
+ul {
+  margin-left: 0.5rem;
+  text-align: justify;
+}
+@media (max-width: 480px) {
+  ul li {
+    margin: 1rem;
+  }
+}
 .micarousel img {
   max-height: 350px;
-
+  margin-bottom: 2rem;
   object-fit: contain;
 }
 
@@ -165,7 +219,120 @@ p {
 .formulario {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  border: 1px solid black;
+  max-width: 50%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #faf9fc;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.formulario textarea {
+  height: 80px;
+  resize: vertical;
+}
+.formulario h3 {
+  text-align: center;
+  color: #574964;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+.formulario input[type="text"],
+.formulario textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.formulario .radio {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 0.5rem;
+  margin: 0;
+  color: #574964;
+  font-weight: 400;
+}
+.formulario .radioitem {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* --- Etiquetas generales --- */
+.formulario label {
+  font-weight: 500;
+  color: #574964;
+}
+
+/* --- Botón --- */
+.formulario input[type="submit"] {
+  background-color: #574964;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 90%;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #6b5b80;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .formulario {
+    padding: 1.5rem;
+    max-width: 80%;
+  }
+}
+
+.videohitos {
+  max-width: 100%;
+}
+.hitos {
+  display: grid;
+  white-space: pre-line;
+  line-height: 1;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.vhitoscol {
+  grid-column: 1/2;
+  grid-row: 1/5;
+}
+.imgbajovideo {
+  max-width: 90%;
+  opacity: 0.9;
+}
+.cold {
+  grid-column: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: right;
+}
+
+.coli {
+  grid-column: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
 }
 footer p {
   font-weight: 700;
@@ -192,4 +359,23 @@ footer p {
 }
 footer img {
   width: 40px;
+}
+
+@media (max-width: 480px) {
+  .pie {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .parrafopie p {
+    font-size: 0.8rem;
+  }
+
+  .enlaces img {
+    width: 30px;
+  }
+
+  .enlaces {
+    gap: 8px;
+  }
 }
