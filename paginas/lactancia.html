@@ -4,23 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../ccs/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Embarazo</a></li>
-                <li><a href="#">Lactancia</a></li>
-                <li><a href="./bebe.html">El Recién Nacido</a> </li> 
-            </ul>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../Recursos/bebeymamadibujo.webp" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Embarazo</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./lactancia.html">Lactancia</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="./bebe.html">El Recién Nacido</a>
+                            </li>
+                        <ul>        
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+            </div>
         </nav>
-        <img src="../Recursos/bebeymamadibujo.webp" alt="Dibujo de bebé y mamá">
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo optio sequi reiciendis laudantium magni? Modi, quis labore voluptate sapiente quae dolorum, mollitia perferendis illo veritatis eveniet pariatur consequuntur saepe cumque.</p>
-        <div class="formulario">
+        <h1>Lactancia: una elección informada, un vínculo para toda la vida</h1>
+        <p>La lactancia materna es una práctica natural que ofrece beneficios comprobados para la salud del bebé y de la madre. La leche materna contiene <strong>todos los nutrientes</strong> que el recién nacido necesita en los primeros meses de vida, además de <strong>anticuerpos</strong> que <em>fortalecen su sistema inmunológico y reducen el riesgo de infecciones, alergias y enfermedades crónicas</em> a futuro.
+
+        Para la madre, amamantar favorece la <strong>recuperación posparto</strong>, ayuda a <strong>prevenir hemorragias, reduce el riesgo de cáncer de mama y ovario,</strong> y contribuye al <strong>bienestar emocional</strong> gracias a la liberación de oxitocina, la “hormona del vínculo”.
+
+        Elegir amamantar es una <strong>decisión personal e informada</strong>. Cada experiencia es única, y contar con apoyo profesional y emocional puede marcar la diferencia. La lactancia no solo nutre el cuerpo, sino también el lazo afectivo que se forma desde los primeros momentos de vida, creando un vínculo que perdura para siempre.</p>
+
+        <!-- carrousel -->
+        <div id="carouselExampleIndicators" class="carousel slide micarousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="../Recursos/lm4.webp" class="d-block w-100" alt="Lactancia">
+                </div>
+                <div class="carousel-item">
+                <img src="../Recursos/lm7.webp" class="d-block w-100" alt="Lactancia">
+                </div>
+                <div class="carousel-item">
+                <img src="../Recursos/LM2.webp" class="d-block w-100" alt="Lactancia">
+                </div>
+                <div class="carousel-item">
+                <img src="../Recursos/lm6.png" class="d-block w-100" alt="Lactancia">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+       <h2>¿Es compatible con la lactancia?</h2>
+       <p>Es muy común que las madres primerizas tengan dudas sobre si pueden seguir amamantando al tomar ciertos medicamentos, someterse a estudios médicos o enfrentar enfermedades leves. Muchas veces, por miedo o falta de información clara, se <strong>interrumpe la lactancia innecesariamente</strong>. La realidad es que la mayoría de los tratamientos son <strong>compatibles con la lactancia</strong>, y existen recursos confiables para verificarlo. Si tenés dudas sobre un medicamento, no dejes de consultar con tu profesional de salud, pero también podés acceder a <em>fuentes oficiales</em> que te orienten con información actualizada y basada en evidencia.</p>
+       <p>Consultá la base de datos oficial en España: <a href="https://www.e-lactancia.org/" target="_blank" rel="noopener noreferrer">e-lactancia.org</a></p>
+       <h2>Posiciones para amamantar</h2>
+       <p>Conocer distintas posiciones para amamantar es fundamental para que cada madre pueda elegir la que mejor se adapte a ella y a su bebé. No existe una única forma correcta: si la lactancia va bien y ambos están cómodos, no es necesario cambiar. Cambiar de posición puede ser útil para vaciar mejor el pecho y prevenir problemas como <em>dolor, grietas, mastitis o conductos obstruidos</em>. 
+        Entre las posiciones más comunes está la <strong>clásica</strong>, en la que la madre está sentada y sostiene al bebé frente a su cuerpo; la de <strong>caballito</strong>, donde el bebé se sienta sobre la pierna de la madre; la <strong>reversa</strong>, que permite cambiar de pecho sin mover al bebé; o la posición en <strong>canasto</strong>, recomendada para madres con cesárea o para amamantar gemelos. 
+        También existen opciones acostadas, como el <strong>decúbito lateral</strong>, muy útil para descansar o dar el pecho durante la noche, y la posición con la madre <strong>recostada boca arriba</strong> y el bebé sobre su cuerpo, recomendada cuando el flujo de leche es muy fuerte. Lo más importante es que madre e hijo estén relajados y confortables para que la lactancia sea una experiencia positiva para ambos.</p>
+       <img class="posiciones" src="../Recursos/posicioneslm.jpg" alt="posiciones LM">
+       <div class="formulario">
             <h3>Queremos conocerte más</h3>
             <form action="">
                 <label for="Nombre">Nombre</label>
@@ -39,14 +104,20 @@
             </form>
         </div>
     </main>
-    <footer>
-        <p>¡Encontranos en nuestras redes!</p>
-        <a href="https://wa.me" target="_blank"><img src="../Recursos/wpp.jpg" alt="Whatshapp"></a>
+    <footer class="pie"> 
+        <div class="parrafopie">
+            <p>¿Te ha resultado útil? Comparte y ayuda a otras mamás</p>
+        </div>
+        <div class="enlaces">
+            <a href="https://wa.me" target="_blank"><img src="../Recursos/wpp.jpg" alt="Whatshapp"></a>
         
-        <a href="https://www.facebook.com/" target="_blank"><img src="../Recursos/fb.jpg" alt="Facebook"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../Recursos/fb.jpg" alt="Facebook"></a>
+            
+            <a href="https://www.instagram.com/" target="_blank"><img src="../Recursos/ig.jpg" alt="Instagram"></a>
+    </div>
         
-        <a href="https://www.instagram.com/" target="_blank"><img src="../Recursos/ig.jpg" alt="Instagram"></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 

@@ -4,36 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../ccs/style.css">
 </head>
 
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Embarazo</a></li>
-                <li><a href="./lactancia.html">Lactancia</a></li>
-                <li><a href="#">El Recién Nacido</a> </li> 
-            </ul>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../Recursos/bebeymamadibujo.webp" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Embarazo</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./lactancia.html">Lactancia</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">El Recién Nacido</a>
+                        </li>
+                            
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
         </nav>
-        <img src="../Recursos/bebeymamadibujo.webp" alt="Dibujo de bebé y mamá">
-    
     </header>
     <main>
         <h1>Hitos del Recién Nacido</h1>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/56Stt9J90F8?si=JnXrebxDpEb58D9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </main>
     
-    <footer>
-        <p>¡Encontranos en nuestras redes!</p>
-        <a href="https://wa.me" target="_blank"><img src="../Recursos/wpp.jpg" alt="Whatshapp"></a>
+    <footer class="pie">
+        <div class="parrafopie">
+            <p>¿Te ha resultado útil? Comparte y ayuda a otras mamás</p>
+        </div>
+        <div class="enlaces">
+            <a href="https://wa.me" target="_blank"><img src="../Recursos/wpp.jpg" alt="Whatshapp"></a>
         
-        <a href="https://www.facebook.com/" target="_blank"><img src="../Recursos/fb.jpg" alt="Facebook"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../Recursos/fb.jpg" alt="Facebook"></a>
+            
+            <a href="https://www.instagram.com/" target="_blank" ><img src="../Recursos/ig.jpg" alt="Instagram"></a>
+        </div>
         
-        <a href="https://www.instagram.com/" target="_blank" ><img src="../Recursos/ig.jpg" alt="Instagram"></a>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 

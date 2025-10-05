@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entendiendo al Bebé</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./ccs/style.css">
 
 
@@ -12,25 +13,46 @@
 <body>
     <!-- encabezado -->
      <header>
-        <nav>
-            <ul>
-                <li><a href="#">Embarazo</a></li>
-                <li><a href="./paginas/lactancia.html">Lactancia</a></li>
-                <li><a href="./paginas/bebe.html">El Recién Nacido</a> </li> 
-            </ul>
-        </nav>
-        <img src="./Recursos/bebeymamadibujo.webp" alt="Dibujo de bebé y mamá">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./Recursos/bebeymamadibujo.webp" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Embarazo</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./paginas/lactancia.html">Lactancia</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./paginas/bebe.html">El Recién Nacido</a>
+                        </li>
+                            
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+          
         
-    </header>
+        
+        
+        </header>
 
     <!-- cuerpo -->
      <main>
         <h1>Todo sobre el embarazo, la lactancia y el recién nacido</h1>
-        <p>El camino hacia la maternidad y la paternidad está lleno de emociones, preguntas y descubrimientos. Desde los primeros cambios del embarazo, pasando por la experiencia de la lactancia, hasta los cuidados del recién nacido, cada etapa trae sus propios desafíos y momentos inolvidables. En esta sección te brindamos información confiable, clara y actualizada para acompañarte paso a paso.
+        <p class="intro">El camino hacia la maternidad y la paternidad está lleno de emociones, preguntas y descubrimientos. Desde los primeros cambios del embarazo, pasando por la experiencia de la lactancia, hasta los cuidados del recién nacido, cada etapa trae sus propios desafíos y momentos inolvidables. En esta sección te brindamos información confiable, clara y actualizada para acompañarte paso a paso.
 
         Aquí encontrarás recursos útiles sobre el desarrollo del bebé en el embarazo, consejos prácticos sobre lactancia materna o mixta, y una guía esencial para los primeros meses del bebé: desde el cuidado del cordón umbilical hasta los principales hitos de los primeros meses de vida. Nuestro objetivo es ayudarte a tomar decisiones informadas, ganar confianza y disfrutar más de cada momento.</p>
 
-
+        
         <h2>Embarazo</h2>
         <img class="meses" src="./Recursos/mesesembarao.jpeg" alt="Mes a mes el embarazo">
         <h3>Primer trimestre (semanas 1 a 12)</h3>
@@ -38,60 +60,67 @@
 
         Es un buen momento para confirmar el embarazo con una visita al médico, iniciar controles prenatales y comenzar a tomar ácido fólico si aún no se ha hecho. Muchas mamás y papás también se enfrentan a dudas comunes: ¿qué alimentos evitar?, ¿es normal sentir miedo o ansiedad?, ¿cómo comunicar la noticia? Este trimestre está lleno de emociones, y buscar información y acompañamiento puede marcar la diferencia para vivirlo con más tranquilidad.</p>
         <h4>Consejos y recomendaciones:</h4>
-        <p>Para la madre:</p>
-        <ul>
-            <li>Descansa todo lo que puedas. El cansancio es real y no es debilidad: tu cuerpo está trabajando el doble.</li>
-            <li>Hidrátate bien y come pequeñas porciones durante el día para ayudar a controlar las náuseas.</li>
-            <li>Evita automedicarte. Consulta siempre antes de tomar suplementos, hierbas o medicamentos.</li>
-            <li>Si sientes tristeza constante o ansiedad, háblalo. La salud mental es tan importante como la física.</li>
-        </ul>
-        <p>Para el padre o acompañante:</p>
-        <ul>
-            <li>Acompaña a las citas médicas si es posible. Estar presente fortalece el vínculo familiar desde el inicio.</li>
-            <li>Infórmate también: leer sobre el embarazo no es solo cosa de mamás.</li>
-            <li>Escucha con empatía y valida lo que siente tu pareja, incluso si no lo entiendes del todo.</li>
-            <li>Pregunta: ¿cómo puedo ayudarte hoy? A veces lo más simple es lo más valioso.</li>
-        </ul>
+        <div class="consejos">
+            <p class="madre">Para la madre:</p>
+            <ul class="lista1">
+                <li>Descansa todo lo que puedas. El cansancio es real y no es debilidad: tu cuerpo está trabajando el doble.</li>
+                <li>Hidrátate bien y come pequeñas porciones durante el día para ayudar a controlar las náuseas.</li>
+                <li>Evita automedicarte. Consulta siempre antes de tomar suplementos, hierbas o medicamentos.</li>
+                <li>Si sientes tristeza constante o ansiedad, háblalo. La salud mental es tan importante como la física.</li>
+            </ul>
+            <p class="padre">Para el padre o acompañante:</p>
+            <ul class="lista2">
+                <li>Acompaña a las citas médicas si es posible. Estar presente fortalece el vínculo familiar desde el inicio.</li>
+                <li>Infórmate también: leer sobre el embarazo no es solo cosa de mamás.</li>
+                <li>Escucha con empatía y valida lo que siente tu pareja, incluso si no lo entiendes del todo.</li>
+                <li>Pregunta: ¿cómo puedo ayudarte hoy? A veces lo más simple es lo más valioso.</li>
+            </ul>
+        </div>
+        
 
         <h3>Segundo Trimestre (semanas 13 a 26)</h3>
         <p>El segundo trimestre suele ser el más llevadero para muchas mujeres. Las náuseas tienden a disminuir, se recupera algo de energía y el cuerpo se adapta mejor al embarazo. Es también cuando el vientre comienza a notarse más y, hacia la mitad del trimestre, muchas madres sienten por primera vez los movimientos del bebé. En este período, el crecimiento fetal es notable: se desarrollan los sentidos, se fortalece el esqueleto y se forma el lanugo (una fina capa de vello).
 
         A nivel médico, este trimestre incluye ecografías clave, como la morfológica, que evalúa el desarrollo del bebé en detalle. También pueden surgir dudas sobre el sexo del bebé, cómo elegir un nombre o qué cambios esperar en la vida familiar. Es una etapa ideal para preparar el entorno físico y emocional del hogar, y para que ambos padres se involucren activamente en este camino hacia la maternidad y la paternidad.</p>
         <h4>Consejos y recomendaciones:</h4>
-        <p>Para la madre:</p>
-        <ul>
-            <li>Aprovecha este periodo de mayor energía para hacer ejercicio suave, como caminatas o yoga prenatal.</li>
-            <li>Comienza a cuidar tu piel para prevenir estrías (aunque no todas se pueden evitar, la hidratación ayuda).</li>
-            <li>Mantén tus controles al día y realiza los estudios indicados, como la ecografía morfológica.</li>
-            <li>Habla con tu profesional sobre el plan de parto y cualquier miedo o duda que tengas.</li>
-        </ul>
-        <p>Para el padre o acompañante:</p>
-        <ul>
-            <li>Participa en la elección de productos para el bebé, visitas médicas o decoración del cuarto.</li>
-            <li>Ayuda a generar un entorno relajado y libre de estrés. El embarazo también se vive en casa.</li>
-            <li>Comiencen juntos a hablar sobre la crianza, la lactancia y los roles que cada uno asumirá.</li>
-            <li>Escucha activamente los cambios físicos y emocionales que está viviendo tu pareja. A veces no necesita soluciones, solo ser escuchada.</li>
-        </ul>
+        <div class="consejos">
+            <p class="madre">Para la madre:</p>
+            <ul class="lista1">
+                <li>Aprovecha este periodo de mayor energía para hacer ejercicio suave, como caminatas o yoga prenatal.</li>
+                <li>Comienza a cuidar tu piel para prevenir estrías (aunque no todas se pueden evitar, la hidratación ayuda).</li>
+                <li>Mantén tus controles al día y realiza los estudios indicados, como la ecografía morfológica.</li>
+                <li>Habla con tu profesional sobre el plan de parto y cualquier miedo o duda que tengas.</li>
+            </ul>
+            <p class="padre">Para el padre o acompañante:</p>
+            <ul class="lista2">
+                <li>Participa en la elección de productos para el bebé, visitas médicas o decoración del cuarto.</li>
+                <li>Ayuda a generar un entorno relajado y libre de estrés. El embarazo también se vive en casa.</li>
+                <li>Comiencen juntos a hablar sobre la crianza, la lactancia y los roles que cada uno asumirá.</li>
+                <li>Escucha activamente los cambios físicos y emocionales que está viviendo tu pareja. A veces no necesita soluciones, solo ser escuchada.</li>
+            </ul>
+        </div>
 
         <h3>Tercer Trimestre (semanas 27 al parto)</h3>
         <p>En el tercer trimestre, el embarazo entra en su recta final. El cuerpo de la madre experimenta más peso, molestias en la espalda, dificultad para dormir o digestiones más lentas, mientras el bebé gana peso y se prepara para el nacimiento. Es común sentir una mezcla de ansiedad, ilusión y cansancio, por lo que es importante mantener una buena comunicación con el equipo médico y buscar apoyo emocional si es necesario.
 
         Durante estas semanas, se recomienda asistir a clases de preparación para el parto, armar el bolso para el hospital y definir un plan de parto si así se desea. Muchas familias se preguntan cómo saber si están en trabajo de parto, qué sucede si se pasa la fecha probable de parto o cómo enfrentar el dolor. Este trimestre es una oportunidad para informarse, conectar con el bebé y prepararse para el gran momento del nacimiento y la llegada al puerperio.</p>
         <h4>Consejos y recomendaciones:</h4>
-        <p>Para la madre:</p>
-        <ul>
-            <li>Practica técnicas de respiración, relajación o meditación. Te serán útiles para el parto y el postparto.</li>
-            <li>Haz pausas durante el día para descansar, especialmente si trabajas fuera de casa.</li>
-            <li>Prepara con tiempo la valija para el hospital o centro de parto y asegúrate de tener documentos importantes a mano.</li>
-            <li>Habla con tu equipo médico sobre señales del trabajo de parto y cuándo acudir al hospital.</li>
-        </ul>
-        <p>Para el padre o acompañante:</p>
-        <ul>
-            <li>Aprende a reconocer las señales del trabajo de parto junto a tu pareja. Podrás ayudar a actuar con calma y rapidez.</li>
-            <li>Sé paciente si hay cambios de humor o molestias físicas. El cuerpo está en su máximo esfuerzo.</li>
-            <li>Ten a mano contactos importantes (obstetra, centro de salud, transporte) y ofrece tranquilidad.</li>
-            <li>Planea también tus tiempos de licencia o disponibilidad. Estar presente no solo es útil: es necesario y muy valorado.</li>
-        </ul>
+        <div class="consejos">
+            <p class="madre">Para la madre:</p>
+            <ul class="lista1">
+                <li>Practica técnicas de respiración, relajación o meditación. Te serán útiles para el parto y el postparto.</li>
+                <li>Haz pausas durante el día para descansar, especialmente si trabajas fuera de casa.</li>
+                <li>Prepara con tiempo la valija para el hospital o centro de parto y asegúrate de tener documentos importantes a mano.</li>
+                <li>Habla con tu equipo médico sobre señales del trabajo de parto y cuándo acudir al hospital.</li>
+            </ul>
+            <p class="padre">Para el padre o acompañante:</p>
+            <ul class="lista2">
+                <li>Aprende a reconocer las señales del trabajo de parto junto a tu pareja. Podrás ayudar a actuar con calma y rapidez.</li>
+                <li>Sé paciente si hay cambios de humor o molestias físicas. El cuerpo está en su máximo esfuerzo.</li>
+                <li>Ten a mano contactos importantes (obstetra, centro de salud, transporte) y ofrece tranquilidad.</li>
+                <li>Planea también tus tiempos de licencia o disponibilidad. Estar presente no solo es útil: es necesario y muy valorado.</li>
+            </ul>
+        </div>
         <section>
             <h2>El Parto</h2>
             <p>El parto es uno de los momentos más importantes y significativos en la vida de una familia. Aunque cada nacimiento es único, contar con información clara y preparación emocional puede marcar la diferencia en cómo se vive esta experiencia. A continuación, te compartimos todo lo que necesitás saber sobre este gran momento, desde cuándo acudir al hospital hasta la primera hora de vida de tu bebé.</p>
@@ -114,28 +143,30 @@
             <h3>Lista de infaltables para el hospital</h3>
 
             <p>Tener el bolso listo con anticipación te da tranquilidad. Se recomienda prepararlo desde la semana 36, tanto para la persona gestante como para el bebé y el/la acompañante. Aquí una lista práctica:</p>
-            <p>Para la madre:</p>
-            <ul>
-                <li>Documentos personales, estudios y plan de parto (si tenés uno).</li>
-                <li>Camisones o pijamas cómodos que se abran adelante para facilitar la lactancia.</li>
-                <li>Ropa interior cómoda y de algodón (incluir bragas posparto y sotenes de lactancia).</li>
-                <li>Pantuflas o chinelas, elementos de higiene personal (cepillo, shampoo, toallas, etc.).</li>
-                <li>Compresas femeninas tipo postparto.</li>
-                <li>Cargador de celular y algo que te relaje (música, spray, pelotita, etc.).</li>
-            </ul>
-            <p>Para el bebé:</p>
-            <ul>
-                <li>2 o 3 mudas completas (enteritos, bodies, gorrito, medias).</li>
-                <li>Manta o arrullo suave.</li>
-                <li>Pañales recién nacido, toallitas húmedas, crema para la zona del pañal.</li>
-                <li>Ropa para salir del hospital, según el clima.</li>
-            </ul>
-            <p>Para la pareja o acompañante:</p>
-            <ul>
-                <li>Ropa cómoda y abrigo.</li>
-                <li>Snacks, botella de agua y elementos de higiene personal.</li>
-                <li>Teléfono cargado, cámara si lo desea, y mucha paciencia y amor para acompañar el proceso.</li>
-            </ul>
+            <div class="consejos2">
+                <p class="madre2">Para la madre:</p>
+                <ul class="listam">
+                    <li>Documentos personales, estudios y plan de parto (si tenés uno).</li>
+                    <li>Camisones o pijamas cómodos que se abran adelante para facilitar la lactancia.</li>
+                    <li>Ropa interior cómoda y de algodón (incluir bragas posparto y sotenes de lactancia).</li>
+                    <li>Pantuflas o chinelas, elementos de higiene personal (cepillo, shampoo, toallas, etc.).</li>
+                    <li>Compresas femeninas tipo postparto.</li>
+                    <li>Cargador de celular y algo que te relaje (música, spray, pelotita, etc.).</li>
+                </ul>
+                <p class="bebe2">Para el bebé:</p>
+                <ul class="listab">
+                    <li>2 o 3 mudas completas (enteritos, bodies, gorrito, medias).</li>
+                    <li>Manta o arrullo suave.</li>
+                    <li>Pañales recién nacido, toallitas húmedas, crema para la zona del pañal.</li>
+                    <li>Ropa para salir del hospital, según el clima.</li>
+                </ul>
+                <p class="padre2">Para la pareja o acompañante:</p>
+                <ul class="listap">
+                    <li>Ropa cómoda y abrigo.</li>
+                    <li>Snacks, botella de agua y elementos de higiene personal.</li>
+                    <li>Teléfono cargado, cámara si lo desea, y mucha paciencia y amor para acompañar el proceso.</li>
+                </ul>
+            </div>
 
             <article> 
                 <h3>El parto y el alumbramiento: ¿qué esperar?</h3>
@@ -158,14 +189,25 @@
      </main>
    
     <!-- pie -->
-     <footer>
-        <p>¡Encontranos en nuestras redes!</p>
-        <a href="https://wa.me" target="_blank"> <img src="./Recursos/wpp.jpg"  alt="Whatshapp"></a>
+    <footer class="pie">
+        <div class="parrafopie"> 
+            <p >¿Te ha resultado útil? Comparte y ayuda a otras mamás</p>
+        </div>
         
-        <a href="https://www.facebook.com/" target="_blank"><img src="./Recursos/fb.jpg" alt="Facebook"></a>
+        <div class="enlaces">
+            
+            <a href="https://wa.me" target="_blank"> <img src="./Recursos/wpp.jpg"  alt="Whatshapp"></a>
+            
+            <a href="https://www.facebook.com/" target="_blank"><img src="./Recursos/fb.jpg" alt="Facebook"></a>
+            
+            <a href="https://www.instagram.com/" target="_blank"><img src="./Recursos/ig.jpg" alt="Instagram"></a>
+        </div>
         
-        <a href="https://www.instagram.com/" target="_blank"><img src="./Recursos/ig.jpg" alt="Instagram"></a>
     </footer>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+
 </body>
 
 
