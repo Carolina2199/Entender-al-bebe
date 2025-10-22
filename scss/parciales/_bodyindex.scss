@@ -1,0 +1,134 @@
+body {
+  background-image: url("../Recursos/fondo1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  h1 {
+    text-decoration: underline;
+    text-align: center;
+    color: #333;
+    text-shadow: -1px -1px 0 #000;
+    text-transform: capitalize;
+    padding: 1%;
+    padding-bottom: 0%;
+  }
+  .intro {
+    font-style: italic;
+  }
+  h2,
+  h3,
+  h4 {
+    margin-left: 1rem;
+    padding-bottom: 0%;
+  }
+
+  body ul li {
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+  }
+  .meses {
+    width: 350px;
+    margin-left: 3%;
+  }
+}
+@media (max-width: 480px) {
+  .meses {
+    align-items: center;
+  }
+}
+// Estilos globales para los párrafos y listas
+
+ul {
+  text-align: justify;
+}
+
+// Consejos grid (primer trimestre)
+.consejos {
+  display: grid;
+  grid-area: unset;
+  padding: 2%;
+  padding-top: 0%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "madre padre"
+    "lista1 lista2";
+
+  .madre {
+    grid-area: madre;
+    text-decoration: underline;
+  }
+
+  .padre {
+    grid-area: padre;
+    text-decoration: underline;
+  }
+
+  .lista1 {
+    grid-area: lista1;
+  }
+
+  .lista2 {
+    grid-area: lista2;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-areas:
+      "madre"
+      "lista1"
+      "padre"
+      "lista2";
+    grid-template-columns: 1fr;
+  }
+}
+
+// Consejos2 grid (bolso del hospital)
+.consejos2 {
+  display: grid;
+  grid-area: unset;
+  padding: 2%;
+  padding-top: 0%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "madre2 bebe2 padre2"
+    "listam listab listap";
+
+  .madre2 {
+    grid-area: madre2;
+    text-decoration: underline;
+  }
+
+  .bebe2 {
+    grid-area: bebe2;
+    text-decoration: underline;
+  }
+
+  .padre2 {
+    grid-area: padre2;
+    text-decoration: underline;
+  }
+
+  .listam {
+    grid-area: listam;
+  }
+
+  .listab {
+    grid-area: listab;
+  }
+
+  .listap {
+    grid-area: listap;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-areas:
+      "madre2"
+      "listam"
+      "bebe2"
+      "listab"
+      "padre2"
+      "listap";
+    grid-template-columns: 1fr;
+  }
+}

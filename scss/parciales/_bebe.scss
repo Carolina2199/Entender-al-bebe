@@ -1,0 +1,66 @@
+@use "variables" as *;
+
+.hitos {
+  display: grid;
+  white-space: pre-line;
+  line-height: 1;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 0.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  .vhitoscol {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    .videohitos {
+      max-width: 100%;
+    }
+    .imgbajovideo {
+      max-width: 90%;
+      opacity: 0.9;
+    }
+  }
+  .cold {
+    grid-column: 2 / 4;
+    @include colhitos;
+    text-align: right;
+  }
+  .coli {
+    grid-column: 2 / 4;
+    @include colhitos;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .hitos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 1.5rem;
+    margin: 1rem;
+    .vhitoscol {
+      grid-column: auto;
+      grid-row: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .videohitos {
+        width: 100%;
+        height: auto;
+      }
+      .imgbajovideo {
+        max-width: 100%;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  .cold {
+    text-align: right;
+    @include colresponsive;
+  }
+  .coli {
+    text-align: left;
+    @include colresponsive;
+  }
+}

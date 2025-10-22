@@ -1,0 +1,48 @@
+@use "./variables" as *;
+footer {
+  p {
+    font-weight: 700;
+  }
+  .parrafopie {
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+  }
+  &.pie {
+    background-color: $rosa;
+    height: 70px;
+    padding: 2%;
+    padding-left: 0%;
+    display: flex;
+  }
+  .enlaces {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pie {
+    height: auto;
+    padding: 1rem;
+    padding-left: 0.5rem;
+  }
+
+  .parrafopie p {
+    font-size: 0.8rem;
+  }
+
+  .enlaces img {
+    width: 30px;
+  }
+
+  .enlaces {
+    gap: 8px;
+  }
+}
