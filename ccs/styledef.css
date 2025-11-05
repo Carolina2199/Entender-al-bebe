@@ -408,5 +408,73 @@ ul {
     width: 100%;
   }
 }
+@media (min-width: 481px) and (max-width: 992px) {
+  header nav.barra {
+    font-size: 1rem;
+  }
+  .formulario {
+    max-width: 70%;
+    padding: 1.5rem;
+  }
+  .posiciones {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+  .posiciones .posicionesimg {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .posiciones p {
+    font-size: 1rem;
+  }
+  .consejos {
+    grid-template-columns: 1fr;
+    grid-template-areas: "madre" "lista1" "padre" "lista2";
+    text-align: center;
+  }
+  .consejos2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "madre2 bebe2" "listam listab" "padre2 listap";
+    text-align: center;
+  }
+  .hitos {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem auto;
+  }
+  .hitos .vhitoscol {
+    grid-column: 1/2;
+  }
+  .hitos .vhitoscol .videohitos {
+    width: 100%;
+    height: auto;
+  }
+  .hitos .vhitoscol .imgbajovideo {
+    max-width: 95%;
+    margin-top: 0.5rem;
+  }
+  .hitos .cold,
+  .hitos .coli {
+    grid-column: 2/3;
+    text-align: justify;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  footer.pie {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  footer.pie .parrafopie p {
+    margin: 0;
+    line-height: 1.2;
+  }
+  footer.pie .enlaces {
+    margin-top: 0.3rem;
+    align-self: flex-end;
+  }
+}
 
 /*# sourceMappingURL=styledef.css.map */
